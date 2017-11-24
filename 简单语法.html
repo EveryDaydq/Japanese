@@ -1,0 +1,1974 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><style>body {
+  width: 45em;
+  border: 1px solid #ddd;
+  outline: 1300px solid #fff;
+  margin: 16px auto;
+}
+
+body .markdown-body
+{
+  padding: 30px;
+}
+
+@font-face {
+  font-family: fontawesome-mini;
+  src: url(data:font/woff;charset=utf-8;base64,d09GRgABAAAAAAzUABAAAAAAFNgAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAABGRlRNAAABbAAAABwAAAAcZMzaOEdERUYAAAGIAAAAHQAAACAAOQAET1MvMgAAAagAAAA+AAAAYHqhde9jbWFwAAAB6AAAAFIAAAFa4azkLWN2dCAAAAI8AAAAKAAAACgFgwioZnBnbQAAAmQAAAGxAAACZVO0L6dnYXNwAAAEGAAAAAgAAAAIAAAAEGdseWYAAAQgAAAFDgAACMz7eroHaGVhZAAACTAAAAAwAAAANgWEOEloaGVhAAAJYAAAAB0AAAAkDGEGa2htdHgAAAmAAAAAEwAAADBEgAAQbG9jYQAACZQAAAAaAAAAGgsICJBtYXhwAAAJsAAAACAAAAAgASgBD25hbWUAAAnQAAACZwAABOD4no+3cG9zdAAADDgAAABsAAAAmF+yXM9wcmVwAAAMpAAAAC4AAAAusPIrFAAAAAEAAAAAyYlvMQAAAADLVHQgAAAAAM/u9uZ4nGNgZGBg4ANiCQYQYGJgBEJuIGYB8xgABMMAPgAAAHicY2Bm42OcwMDKwMLSw2LMwMDQBqGZihmiwHycoKCyqJjB4YPDh4NsDP+BfNb3DIuAFCOSEgUGRgAKDgt4AAB4nGNgYGBmgGAZBkYGEAgB8hjBfBYGCyDNxcDBwMTA9MHhQ9SHrA8H//9nYACyQyFs/sP86/kX8HtB9UIBIxsDXICRCUgwMaACRoZhDwA3fxKSAAAAAAHyAHABJQB/AIEAdAFGAOsBIwC/ALgAxACGAGYAugBNACcA/wCIeJxdUbtOW0EQ3Q0PA4HE2CA52hSzmZDGe6EFCcTVjWJkO4XlCGk3cpGLcQEfQIFEDdqvGaChpEibBiEXSHxCPiESM2uIojQ7O7NzzpkzS8qRqnfpa89T5ySQwt0GzTb9Tki1swD3pOvrjYy0gwdabGb0ynX7/gsGm9GUO2oA5T1vKQ8ZTTuBWrSn/tH8Cob7/B/zOxi0NNP01DoJ6SEE5ptxS4PvGc26yw/6gtXhYjAwpJim4i4/plL+tzTnasuwtZHRvIMzEfnJNEBTa20Emv7UIdXzcRRLkMumsTaYmLL+JBPBhcl0VVO1zPjawV2ys+hggyrNgQfYw1Z5DB4ODyYU0rckyiwNEfZiq8QIEZMcCjnl3Mn+pED5SBLGvElKO+OGtQbGkdfAoDZPs/88m01tbx3C+FkcwXe/GUs6+MiG2hgRYjtiKYAJREJGVfmGGs+9LAbkUvvPQJSA5fGPf50ItO7YRDyXtXUOMVYIen7b3PLLirtWuc6LQndvqmqo0inN+17OvscDnh4Lw0FjwZvP+/5Kgfo8LK40aA4EQ3o3ev+iteqIq7wXPrIn07+xWgAAAAABAAH//wAPeJyFlctvG1UUh+/12DPN1B7P3JnYjj2Ox4/MuDHxJH5N3UdaEUQLqBIkfQQioJWQ6AMEQkIqsPGCPwA1otuWSmTBhjtps2ADWbJg3EpIXbGouqSbCraJw7kzNo2dRN1cnXN1ZvT7zuuiMEI7ncizyA0URofRBJpCdbQuIFShYY+GZRrxMDVtih5TwQPHtXDFFSIKoWIbuREBjLH27Ny4MsbVx+uOJThavebgVrNRLAiYx06rXsvhxLgWx9xpfHdrs/ekc2Pl2cpPCVEITQpwbj8VQhfXSq2m+Wxqaq2D73Kne5e3NjHqQNj3CRYlJlgUl/jRNP+2Gs2pNYRQiOnmUaQDqm30KqKiTTWPWjboxnTWpvgxjXo0KrtZXAHt7hwIz0YVcj88JnKlJKi3NPAwLyDwZudSmJSMMJFDYaOkaol6XtESx3Gt1VTytdZJ3DCLeaVhVnCBH1fycHTxFXwPX+l2e3d6H/TufGGmMTLTnbSJUdo00zuBswMO/nl3YLeL/wnu9/limCuD3vC54h5NBVz6Li414AI8Vx3iiosKcQXUbrvhFFiYb++HN4DaF4XzFW0fIN4XDWJ3a3XQoq9V8WiyRmdsatV9xUcHims1JloH0YUa090G3Tro3mC6c01f+YwCPquINr1PTaCP6rVTOOmf0GE2dBc7zWIhji3/5MchSuBHgDbU99RMWt3YUNMZMJmx92YP6NsHx/5/M1yvInpnkIOM3Z8fA3JQ2lW1RFC1KaBPDFXNAHYYvGy73aYZZZ3HifbeuiVZCpwA3oQBs0wGPYJbJfg60xrKEbKiNtTe1adwrpBRwlAuQ3q3VRaX0QmQ9a49BTSCuF1MLfQ6+tinOubRBZuWPNoMevGMT+V41KitO1is3D/tpMcq1JHZqDHGs8DoYGDkxJgKjHROeTCmhZvzPm9pod+ltKm4PN7Dyvvldlpsg8D+4AUJZ3F/JBstZz7cbFRxsaAGV6yX/dkcycWf8eS3QlQea+YLjdm3yrOnrhFpUyKVvFE4lpv4bO3Svx/6F/4xmiDu/RT5iI++lko18mY1oX+5UGKR6kmVjM/Zb76yfHtxy+h/SyQ0lLdpdKy/lWB6szatetQJ8nZ80A2Qt6ift6gJeavU3BO4gtxs/KCtNPVibCtYCWY3SIlSBPKXZALXiIR9oZeJ1AuMyxLpHIy/yO7vSiSE+kZvk0ihJ30HgHfzZtEMmvV58x6dtqns0XTAW7Vdm4HJ04OCp/crOO7rd9SGxQAE/mVA9xRN+kVSMRFF6S9JFGUtthkjBA5tFCWc2l4V43Ex9GmUP3SI37Jjmir9KqlaDJ4S4JB3vuM/jzyH1+8MuoZ+QGzfnvPoJb96cZlWjMcKLfgDwB7E634JTY+asjsPzS5CiVnEWY+KsrsIN5rn3mAPjqmQBxGjcGKB9f9ZxY3mYC2L85CJ2FXIxKKyHk+dg0FHbuEc7D5NzWUX32WxFcWNGRAbvwSx0RmIXVDuYySafluQBmzA/ssqJAMLnli+WIC90Gw4lm85wcp0qjArEDPJJV/sSx4P9ungTpgMw5gVC1XO4uULq0s3v1rqLi0vX/z65vlH50f8T/RHmSPTk5xxWBWOluMT6WiOy+tdvWxlV/XQb3o3c6Ssr+r6I708GsX9/nzp1tKFh0s3v7m4vAy/Hnb/KMOvc1wump6Il48K6mGDy02X9Yd65pa+nQIjk76lWxCkG8NBCP0HQS9IpAAAeJxjYGRgYGBhcCrq214Qz2/zlUGenQEEzr/77oug/zewFbB+AHI5GJhAogBwKQ0qeJxjYGRgYH3/P46BgZ0BBNgKGBgZUAEPAE/7At0AAAB4nGNngAB2IGYjhBsYBAAIYADVAAAAAAAAAAAAAFwAyAEeAaACCgKmAx4DggRmAAAAAQAAAAwAagAEAAAAAAACAAEAAgAWAAABAAChAAAAAHiclZI7bxQxFIWPd/JkUYQChEhIyAVKgdBMskm1QkKrRETpQiLRUczueB/K7HhlOxttg8LvoKPgP9DxFxANDR0tHRWi4NjrPIBEgh1p/dm+vufcawNYFWsQmP6e4jSyQB2fI9cwj++RE9wTjyPP4LYoI89iWbyLPIe6+Bh5Hs9rryMv4GbtW+RF3EhuRa7jbrIbeQkPkjdUETOLnL0Kip4FVvAhco1RXyMnSPEz8gzWxE7kWTwUp5HnsCLeR57HW/El8gJWa58iL+JO7UfkOh4l9yMv4UnyEtvQGGECgwF66MNBooF1bGCL1ELB/TYU+ZBRlvsKQ44Se6jQ4a7hef+fh72Crv25kp+8lNWGmeKoOI5jJLb1aGIGvb6TjfWNLdkqdFvJw4l1amjlXtXRZqRN7lSRylZZyhBqpVFWmTEXgWfUrpi/hZOQXdOd4rKuXOtEWT3k5IArPRzTUU5tHKjecZkTpnVbNOnt6jzN8240GD4xtikvZW56043rPMg/dS+dlOceXoR+WPbJ55Dsekq1lJpnypsMUsYOdCW30o103Ytu/lvh+5RWFLfBjm9/N8hJntPhvx92rnoE/kyHdGasGy754kw36vsVf/lFeBi+0COu+cfgQr42G3CRpeLoZ53gmfe3X6rcKt5oVxnptHR9JS8ehVUd5wvvahN2uqxOOpMXapibI5k7Zwbt4xBSaTfoKBufhAnO/uqNcfK8OTs0OQ6l7JIqFjDhYj5WcjevCnI/1DDiI8j4ndWb/5YzDZWh79yomWXeXj7Nnw70/2TIeFPTrlSh89k1ObOSRVZWZfgF0r/zJQB4nG2JUQuCQBCEd07TTg36fb2IyBaLd3vWaUh/vmSJnvpgmG8YcmS8X3Shf3R7QA4OBUocUKHGER5NNbOOEvwc1txnuWkTRb/aPjimJ5vXabI+3VfOiyS15UWvyezM2xiGOPyuMohOH8O8JiO4Af+FsAGNAEuwCFBYsQEBjlmxRgYrWCGwEFlLsBRSWCGwgFkdsAYrXFhZsBQrAAA=) format('woff');
+}
+
+@font-face {
+  font-family: octicons-anchor;
+  src: url(data:font/woff;charset=utf-8;base64,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) format('woff');
+}
+
+.markdown-body {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  color: #333333;
+  overflow: hidden;
+  font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  word-wrap: break-word;
+}
+
+.markdown-body a {
+  background: transparent;
+}
+
+.markdown-body a:active,
+.markdown-body a:hover {
+  outline: 0;
+}
+
+.markdown-body b,
+.markdown-body strong {
+  font-weight: bold;
+}
+
+.markdown-body mark {
+  background: #ff0;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.markdown-body sub,
+.markdown-body sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+.markdown-body sup {
+  top: -0.5em;
+}
+.markdown-body sub {
+  bottom: -0.25em;
+}
+
+.markdown-body h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+.markdown-body img {
+  border: 0;
+}
+
+.markdown-body hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+.markdown-body pre {
+  overflow: auto;
+}
+
+.markdown-body code,
+.markdown-body kbd,
+.markdown-body pre,
+.markdown-body samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+.markdown-body input {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+.markdown-body html input[disabled] {
+  cursor: default;
+}
+
+.markdown-body input {
+  line-height: normal;
+}
+
+.markdown-body input[type="checkbox"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.markdown-body table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.markdown-body td,
+.markdown-body th {
+  padding: 0;
+}
+
+.markdown-body .codehilitetable {
+  border: 0;
+  border-spacing: 0;
+}
+
+.markdown-body .codehilitetable tr {
+  border: 0;
+}
+
+.markdown-body .codehilitetable pre,
+.markdown-body .codehilitetable div.codehilite {
+  margin: 0;
+}
+
+.markdown-body .linenos,
+.markdown-body .code,
+.markdown-body .codehilitetable td {
+  border: 0;
+  padding: 0;
+}
+
+.markdown-body td:not(.linenos) .linenodiv {
+  padding: 0 !important;
+}
+
+.markdown-body .code {
+  width: 100%;
+}
+
+.markdown-body .linenos div pre,
+.markdown-body .linenodiv pre,
+.markdown-body .linenodiv {
+  border: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -webkit-border-top-left-radius: 3px;
+  -webkit-border-bottom-left-radius: 3px;
+  -moz-border-radius-topleft: 3px;
+  -moz-border-radius-bottomleft: 3px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+.markdown-body .code div pre,
+.markdown-body .code div {
+  border: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -webkit-border-top-right-radius: 3px;
+  -webkit-border-bottom-right-radius: 3px;
+  -moz-border-radius-topright: 3px;
+  -moz-border-radius-bottomright: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+.markdown-body * {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.markdown-body input {
+  font: 13px Helvetica, arial, freesans, clean, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+  line-height: 1.4;
+}
+
+.markdown-body a {
+  color: #4183c4;
+  text-decoration: none;
+}
+
+.markdown-body a:hover,
+.markdown-body a:focus,
+.markdown-body a:active {
+  text-decoration: underline;
+}
+
+.markdown-body hr {
+  height: 0;
+  margin: 15px 0;
+  overflow: hidden;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.markdown-body hr:before,
+.markdown-body hr:after {
+  display: table;
+  content: " ";
+}
+
+.markdown-body hr:after {
+  clear: both;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  line-height: 1.1;
+}
+
+.markdown-body h1 {
+  font-size: 30px;
+}
+
+.markdown-body h2 {
+  font-size: 21px;
+}
+
+.markdown-body h3 {
+  font-size: 16px;
+}
+
+.markdown-body h4 {
+  font-size: 14px;
+}
+
+.markdown-body h5 {
+  font-size: 12px;
+}
+
+.markdown-body h6 {
+  font-size: 11px;
+}
+
+.markdown-body blockquote {
+  margin: 0;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body ol ol,
+.markdown-body ul ol {
+  list-style-type: lower-roman;
+}
+
+.markdown-body ul ul ol,
+.markdown-body ul ol ol,
+.markdown-body ol ul ol,
+.markdown-body ol ol ol {
+  list-style-type: lower-alpha;
+}
+
+.markdown-body dd {
+  margin-left: 0;
+}
+
+.markdown-body code,
+.markdown-body pre,
+.markdown-body samp {
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-size: 12px;
+}
+
+.markdown-body pre {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body kbd {
+  background-color: #e7e7e7;
+  background-image: -moz-linear-gradient(#fefefe, #e7e7e7);
+  background-image: -webkit-linear-gradient(#fefefe, #e7e7e7);
+  background-image: linear-gradient(#fefefe, #e7e7e7);
+  background-repeat: repeat-x;
+  border-radius: 2px;
+  border: 1px solid #cfcfcf;
+  color: #000;
+  padding: 3px 5px;
+  line-height: 10px;
+  font: 11px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  display: inline-block;
+}
+
+.markdown-body>*:first-child {
+  margin-top: 0 !important;
+}
+
+.markdown-body>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+.markdown-body .headeranchor-link {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+  padding-right: 6px;
+  padding-left: 30px;
+  margin-left: -30px;
+}
+
+.markdown-body .headeranchor-link:focus {
+  outline: none;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  position: relative;
+  margin-top: 1em;
+  margin-bottom: 16px;
+  font-weight: bold;
+  line-height: 1.4;
+}
+
+.markdown-body h1 .headeranchor,
+.markdown-body h2 .headeranchor,
+.markdown-body h3 .headeranchor,
+.markdown-body h4 .headeranchor,
+.markdown-body h5 .headeranchor,
+.markdown-body h6 .headeranchor {
+  display: none;
+  color: #000;
+  vertical-align: middle;
+}
+
+.markdown-body h1:hover .headeranchor-link,
+.markdown-body h2:hover .headeranchor-link,
+.markdown-body h3:hover .headeranchor-link,
+.markdown-body h4:hover .headeranchor-link,
+.markdown-body h5:hover .headeranchor-link,
+.markdown-body h6:hover .headeranchor-link {
+  height: 1em;
+  padding-left: 8px;
+  margin-left: -30px;
+  line-height: 1;
+  text-decoration: none;
+}
+
+.markdown-body h1:hover .headeranchor-link .headeranchor,
+.markdown-body h2:hover .headeranchor-link .headeranchor,
+.markdown-body h3:hover .headeranchor-link .headeranchor,
+.markdown-body h4:hover .headeranchor-link .headeranchor,
+.markdown-body h5:hover .headeranchor-link .headeranchor,
+.markdown-body h6:hover .headeranchor-link .headeranchor {
+  display: inline-block;
+}
+
+.markdown-body h1 {
+  padding-bottom: 0.3em;
+  font-size: 2.25em;
+  line-height: 1.2;
+  border-bottom: 1px solid #eee;
+}
+
+.markdown-body h2 {
+  padding-bottom: 0.3em;
+  font-size: 1.75em;
+  line-height: 1.225;
+  border-bottom: 1px solid #eee;
+}
+
+.markdown-body h3 {
+  font-size: 1.5em;
+  line-height: 1.43;
+}
+
+.markdown-body h4 {
+  font-size: 1.25em;
+}
+
+.markdown-body h5 {
+  font-size: 1em;
+}
+
+.markdown-body h6 {
+  font-size: 1em;
+  color: #777;
+}
+
+.markdown-body p,
+.markdown-body blockquote,
+.markdown-body ul,
+.markdown-body ol,
+.markdown-body dl,
+.markdown-body table,
+.markdown-body pre,
+.markdown-body .admonition {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.markdown-body hr {
+  height: 4px;
+  padding: 0;
+  margin: 16px 0;
+  background-color: #e7e7e7;
+  border: 0 none;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+  padding-left: 2em;
+}
+
+.markdown-body ul ul,
+.markdown-body ul ol,
+.markdown-body ol ol,
+.markdown-body ol ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body li>p {
+  margin-top: 16px;
+}
+
+.markdown-body dl {
+  padding: 0;
+}
+
+.markdown-body dl dt {
+  padding: 0;
+  margin-top: 16px;
+  font-size: 1em;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.markdown-body dl dd {
+  padding: 0 16px;
+  margin-bottom: 16px;
+}
+
+.markdown-body blockquote {
+  padding: 0 15px;
+  color: #777;
+  border-left: 4px solid #ddd;
+}
+
+.markdown-body blockquote>:first-child {
+  margin-top: 0;
+}
+
+.markdown-body blockquote>:last-child {
+  margin-bottom: 0;
+}
+
+.markdown-body table {
+  display: block;
+  width: 100%;
+  overflow: auto;
+  word-break: normal;
+  word-break: keep-all;
+}
+
+.markdown-body table th {
+  font-weight: bold;
+}
+
+.markdown-body table th,
+.markdown-body table td {
+  padding: 6px 13px;
+  border: 1px solid #ddd;
+}
+
+.markdown-body table tr {
+  background-color: #fff;
+  border-top: 1px solid #ccc;
+}
+
+.markdown-body table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+.markdown-body img {
+  max-width: 100%;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.markdown-body code,
+.markdown-body samp {
+  padding: 0;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  margin: 0;
+  font-size: 85%;
+  background-color: rgba(0,0,0,0.04);
+  border-radius: 3px;
+}
+
+.markdown-body code:before,
+.markdown-body code:after {
+  letter-spacing: -0.2em;
+  content: "\00a0";
+}
+
+.markdown-body pre>code {
+  padding: 0;
+  margin: 0;
+  font-size: 100%;
+  word-break: normal;
+  white-space: pre;
+  background: transparent;
+  border: 0;
+}
+
+.markdown-body .codehilite {
+  margin-bottom: 16px;
+}
+
+.markdown-body .codehilite pre,
+.markdown-body pre {
+  padding: 16px;
+  overflow: auto;
+  font-size: 85%;
+  line-height: 1.45;
+  background-color: #f7f7f7;
+  border-radius: 3px;
+}
+
+.markdown-body .codehilite pre {
+  margin-bottom: 0;
+  word-break: normal;
+}
+
+.markdown-body pre {
+  word-wrap: normal;
+}
+
+.markdown-body pre code {
+  display: inline;
+  max-width: initial;
+  padding: 0;
+  margin: 0;
+  overflow: initial;
+  line-height: inherit;
+  word-wrap: normal;
+  background-color: transparent;
+  border: 0;
+}
+
+.markdown-body pre code:before,
+.markdown-body pre code:after {
+  content: normal;
+}
+
+/* Admonition */
+.markdown-body .admonition {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  position: relative;
+  border-radius: 3px;
+  border: 1px solid #e0e0e0;
+  border-left: 6px solid #333;
+  padding: 10px 10px 10px 30px;
+}
+
+.markdown-body .admonition table {
+  color: #333;
+}
+
+.markdown-body .admonition p {
+  padding: 0;
+}
+
+.markdown-body .admonition-title {
+  font-weight: bold;
+  margin: 0;
+}
+
+.markdown-body .admonition>.admonition-title {
+  color: #333;
+}
+
+.markdown-body .attention>.admonition-title {
+  color: #a6d796;
+}
+
+.markdown-body .caution>.admonition-title {
+  color: #d7a796;
+}
+
+.markdown-body .hint>.admonition-title {
+  color: #96c6d7;
+}
+
+.markdown-body .danger>.admonition-title {
+  color: #c25f77;
+}
+
+.markdown-body .question>.admonition-title {
+  color: #96a6d7;
+}
+
+.markdown-body .note>.admonition-title {
+  color: #d7c896;
+}
+
+.markdown-body .admonition:before,
+.markdown-body .attention:before,
+.markdown-body .caution:before,
+.markdown-body .hint:before,
+.markdown-body .danger:before,
+.markdown-body .question:before,
+.markdown-body .note:before {
+  font: normal normal 16px fontawesome-mini;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  line-height: 1.5;
+  color: #333;
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+.markdown-body .admonition:before {
+  content: "\f056\00a0";
+  color: 333;
+}
+
+.markdown-body .attention:before {
+  content: "\f058\00a0";
+  color: #a6d796;
+}
+
+.markdown-body .caution:before {
+  content: "\f06a\00a0";
+  color: #d7a796;
+}
+
+.markdown-body .hint:before {
+  content: "\f05a\00a0";
+  color: #96c6d7;
+}
+
+.markdown-body .danger:before {
+  content: "\f057\00a0";
+  color: #c25f77;
+}
+
+.markdown-body .question:before {
+  content: "\f059\00a0";
+  color: #96a6d7;
+}
+
+.markdown-body .note:before {
+  content: "\f040\00a0";
+  color: #d7c896;
+}
+
+.markdown-body .admonition::after {
+  content: normal;
+}
+
+.markdown-body .attention {
+  border-left: 6px solid #a6d796;
+}
+
+.markdown-body .caution {
+  border-left: 6px solid #d7a796;
+}
+
+.markdown-body .hint {
+  border-left: 6px solid #96c6d7;
+}
+
+.markdown-body .danger {
+  border-left: 6px solid #c25f77;
+}
+
+.markdown-body .question {
+  border-left: 6px solid #96a6d7;
+}
+
+.markdown-body .note {
+  border-left: 6px solid #d7c896;
+}
+
+.markdown-body .admonition>*:first-child {
+  margin-top: 0 !important;
+}
+
+.markdown-body .admonition>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+/* progress bar*/
+.markdown-body .progress {
+  display: block;
+  width: 300px;
+  margin: 10px 0;
+  height: 24px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  background-color: #ededed;
+  position: relative;
+  box-shadow: inset -1px 1px 3px rgba(0, 0, 0, .1);
+}
+
+.markdown-body .progress-label {
+  position: absolute;
+  text-align: center;
+  font-weight: bold;
+  width: 100%; margin: 0;
+  line-height: 24px;
+  color: #333;
+  text-shadow: 1px 1px 0 #fefefe, -1px -1px 0 #fefefe, -1px 1px 0 #fefefe, 1px -1px 0 #fefefe, 0 1px 0 #fefefe, 0 -1px 0 #fefefe, 1px 0 0 #fefefe, -1px 0 0 #fefefe, 1px 1px 2px #000;
+  -webkit-font-smoothing: antialiased !important;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.markdown-body .progress-bar {
+  height: 24px;
+  float: left;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  background-color: #96c6d7;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, .5), inset 0 -1px 0 rgba(0, 0, 0, .1);
+  background-size: 30px 30px;
+  background-image: -webkit-linear-gradient(
+    135deg, rgba(255, 255, 255, .4) 27%,
+    transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%,
+    transparent 77%, transparent
+  );
+  background-image: -moz-linear-gradient(
+    135deg,
+    rgba(255, 255, 255, .4) 27%, transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%, transparent 77%,
+    transparent
+  );
+  background-image: -ms-linear-gradient(
+    135deg,
+    rgba(255, 255, 255, .4) 27%, transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%, transparent 77%,
+    transparent
+  );
+  background-image: -o-linear-gradient(
+    135deg,
+    rgba(255, 255, 255, .4) 27%, transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%, transparent 77%,
+    transparent
+  );
+  background-image: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, .4) 27%, transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%, transparent 77%,
+    transparent
+  );
+}
+
+.markdown-body .progress-100plus .progress-bar {
+  background-color: #a6d796;
+}
+
+.markdown-body .progress-80plus .progress-bar {
+  background-color: #c6d796;
+}
+
+.markdown-body .progress-60plus .progress-bar {
+  background-color: #d7c896;
+}
+
+.markdown-body .progress-40plus .progress-bar {
+  background-color: #d7a796;
+}
+
+.markdown-body .progress-20plus .progress-bar {
+  background-color: #d796a6;
+}
+
+.markdown-body .progress-0plus .progress-bar {
+  background-color: #c25f77;
+}
+
+.markdown-body .candystripe-animate .progress-bar{
+  -webkit-animation: animate-stripes 3s linear infinite;
+  -moz-animation: animate-stripes 3s linear infinite;
+  animation: animate-stripes 3s linear infinite;
+}
+
+@-webkit-keyframes animate-stripes {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 60px 0;
+  }
+}
+
+@-moz-keyframes animate-stripes {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 60px 0;
+  }
+}
+
+@keyframes animate-stripes {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 60px 0;
+  }
+}
+
+.markdown-body .gloss .progress-bar {
+  box-shadow:
+    inset 0 4px 12px rgba(255, 255, 255, .7),
+    inset 0 -12px 0 rgba(0, 0, 0, .05);
+}
+
+/* Multimarkdown Critic Blocks */
+.markdown-body .critic_mark {
+  background: #ff0;
+}
+
+.markdown-body .critic_delete {
+  color: #c82829;
+  text-decoration: line-through;
+}
+
+.markdown-body .critic_insert {
+  color: #718c00 ;
+  text-decoration: underline;
+}
+
+.markdown-body .critic_comment {
+  color: #8e908c;
+  font-style: italic;
+}
+
+.markdown-body .headeranchor {
+  font: normal normal 16px octicons-anchor;
+  line-height: 1;
+  display: inline-block;
+  text-decoration: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.headeranchor:before {
+  content: '\f05c';
+}
+
+.markdown-body .task-list-item {
+  list-style-type: none;
+}
+
+.markdown-body .task-list-item+.task-list-item {
+  margin-top: 3px;
+}
+
+.markdown-body .task-list-item input {
+  margin: 0 4px 0.25em -20px;
+  vertical-align: middle;
+}
+
+/* Media */
+@media only screen and (min-width: 480px) {
+  .markdown-body {
+    font-size:14px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .markdown-body {
+    font-size:16px;
+  }
+}
+
+@media print {
+  .markdown-body * {
+    background: transparent !important;
+    color: black !important;
+    filter:none !important;
+    -ms-filter: none !important;
+  }
+
+  .markdown-body {
+    font-size:12pt;
+    max-width:100%;
+    outline:none;
+    border: 0;
+  }
+
+  .markdown-body a,
+  .markdown-body a:visited {
+    text-decoration: underline;
+  }
+
+  .markdown-body .headeranchor-link {
+    display: none;
+  }
+
+  .markdown-body a[href]:after {
+    content: " (" attr(href) ")";
+  }
+
+  .markdown-body abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+
+  .markdown-body .ir a:after,
+  .markdown-body a[href^="javascript:"]:after,
+  .markdown-body a[href^="#"]:after {
+    content: "";
+  }
+
+  .markdown-body pre {
+    white-space: pre;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+  }
+
+  .markdown-body pre,
+  .markdown-body blockquote {
+    border: 1px solid #999;
+    padding-right: 1em;
+    page-break-inside: avoid;
+  }
+
+  .markdown-body .progress,
+  .markdown-body .progress-bar {
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+
+  .markdown-body .progress {
+    border: 1px solid #ddd;
+  }
+
+  .markdown-body .progress-bar {
+    height: 22px;
+    border-right: 1px solid #ddd;
+  }
+
+  .markdown-body tr,
+  .markdown-body img {
+    page-break-inside: avoid;
+  }
+
+  .markdown-body img {
+    max-width: 100% !important;
+  }
+
+  .markdown-body p,
+  .markdown-body h2,
+  .markdown-body h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  .markdown-body h2,
+  .markdown-body h3 {
+    page-break-after: avoid;
+  }
+}
+</style><title>简单语法</title></head><body><article class="markdown-body"><h2 id="_1"><a name="user-content-_1" href="#_1" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>英语单词什么时候大写</h2>
+<ul>
+<li>英语句子中的第一个单词的首字母要大写。<br />
+    My name is Alogy.<br />
+    Nice to meet you.</li>
+<li><code>I</code>永远要大写 (不管在句中任何位置，都需要大写)<br />
+    I am your friend<br />
+    He and I are good friends</li>
+<li>姓名中，姓和名的首字母要大写。<br />
+    Romeo and Juliet</li>
+<li>国家（的） ，城市和专有名词首字母要大写。<br />
+    China<br />
+    Chinese<br />
+    Beijing<br />
+    Hollywood</li>
+<li>职务和尊称首字母要大写。<br />
+    President Obama<br />
+    Mr.Clinton<br />
+    Miss Hilton</li>
+</ul>
+<h2 id="be"><a name="user-content-be" href="#be" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>be动词</h2>
+<ul>
+<li><code>be</code>的意思是：<code>是</code></li>
+<li><code>be</code>最基本的有三种形式：<code>am</code>,<code>is</code>,<code>are</code><br />
+<code>am</code>：只用于第一人称单数<code>I</code>做主语时。<br />
+<code>is</code>: 只用于第三人称单数<code>he</code>，<code>she</code>，<code>it</code>作主语。<br />
+<code>are</code>: 用于第二人称单数以及所有人称的复数做主语。</li>
+<li><code>am</code>经常在主语后边缩写为<code>'m</code>, <code>is</code>经常在主语后边缩写为<code>'s</code>,<code>are</code>经常在主语后缩写为<code>'re</code></li>
+</ul>
+<h2 id="_2"><a name="user-content-_2" href="#_2" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>一般疑问句</h2>
+<p>英语中的陈述句变一般疑问句采用句式的变化。<br />
+最基本的含有<strong>be动词</strong>的句子把<code>be</code>提至句首，首字母大写，句末加问号。</p>
+<h2 id="this-is-my-handbag-is-this-your-handbag-yesit-is-my-handbag-noit-isntmy-handbag"><a name="user-content-this-is-my-handbag-is-this-your-handbag-yesit-is-my-handbag-noit-isntmy-handbag" href="#this-is-my-handbag-is-this-your-handbag-yesit-is-my-handbag-noit-isntmy-handbag" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a><pre><code>This is my handbag
+
+Is this your handbag?
+Yes,it is (my handbag).
+No,it isn't(my handbag).
+</code></pre></h2>
+<h2 id="this-is-my-pen-is-this-your-pen-yes-it-ismy-pen-no-it-isntmy-pen"><a name="user-content-this-is-my-pen-is-this-your-pen-yes-it-ismy-pen-no-it-isntmy-pen" href="#this-is-my-pen-is-this-your-pen-yes-it-ismy-pen-no-it-isntmy-pen" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a><pre><code>This is my pen
+
+Is this your pen?
+Yes, it is(my pen).
+No, it isn't(my pen).
+</code></pre></h2>
+<pre><code>This is my book
+
+Is this your book?
+Yes, is it (my book).
+No, it isn't(my book)
+</code></pre>
+
+<h2 id="_3"><a name="user-content-_3" href="#_3" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>否定句</h2>
+<p>英语中否定句通过<strong>not</strong>来体现，<strong>not</strong>需要放在助动词之后。</p>
+<h2 id="this-is-my-umbrella-this-isnt-my-unbrella"><a name="user-content-this-is-my-umbrella-this-isnt-my-unbrella" href="#this-is-my-umbrella-this-isnt-my-unbrella" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a><pre><code>This is my umbrella
+This isn't my unbrella
+</code></pre></h2>
+<h2 id="this-is-my-coat-this-isnt-my-coat"><a name="user-content-this-is-my-coat-this-isnt-my-coat" href="#this-is-my-coat-this-isnt-my-coat" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a><pre><code>This is my coat.
+This isn't my coat.
+</code></pre></h2>
+<h2 id="i-am-a-teacher-are-your-a-teacher-im-not-a-teacher"><a name="user-content-i-am-a-teacher-are-your-a-teacher-im-not-a-teacher" href="#i-am-a-teacher-are-your-a-teacher-im-not-a-teacher" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a><pre><code>I am a teacher.
+Are your a teacher?
+I'm not a teacher.
+</code></pre></h2>
+<pre><code>They are my friends.
+Are they your fiends?
+Tehy aren't my firends.
+</code></pre>
+
+<h2 id="_4"><a name="user-content-_4" href="#_4" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>选择疑问句</h2>
+<p>在一般疑问句的末尾加<code>or...</code>即可。<br />
+回答时不用<code>yes</code>或者<code>no</code>,而选择其中的一句话。<br />
+语调：前升后降。</p>
+<h2 id="are-you-a-doctor-or-a-nurse-i-am-a-doctor-i-am-not-a-nurse"><a name="user-content-are-you-a-doctor-or-a-nurse-i-am-a-doctor-i-am-not-a-nurse" href="#are-you-a-doctor-or-a-nurse-i-am-a-doctor-i-am-not-a-nurse" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a><pre><code>Are you a doctor or a nurse?
+
+I am a doctor.
+I am not a nurse.
+</code></pre></h2>
+<h2 id="are-you-chinese-or-english-i-am-chinese-i-am-not-english"><a name="user-content-are-you-chinese-or-english-i-am-chinese-i-am-not-english" href="#are-you-chinese-or-english-i-am-chinese-i-am-not-english" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a><pre><code>Are you Chinese or English?
+
+I am Chinese.
+I am not English.
+</code></pre></h2>
+<h2 id="is-this-your-house-or-his-house-this-is-my-house-this-isnt-his-house"><a name="user-content-is-this-your-house-or-his-house-this-is-my-house-this-isnt-his-house" href="#is-this-your-house-or-his-house-this-is-my-house-this-isnt-his-house" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a><pre><code>Is this your house or his house?
+This is my house.
+This isn't his house.
+</code></pre></h2>
+<pre><code>Is he your friend or your brother?
+
+He is my friend.
+He isn't my brother.
+</code></pre>
+
+<h2 id="_5"><a name="user-content-_5" href="#_5" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>特殊疑问句</h2>
+<p>特殊疑问词引导的问句称之为特殊疑问句。</p>
+<p>特殊疑问词：<br />
+<code>what</code>，<code>how</code>，<code>who</code>，<code>whom</code>，<code>whose</code>，<code>which</code>，<code>where</code>，<code>when</code>，<code>why</code></p>
+<blockquote>
+<p>what引导的特殊疑问句</p>
+</blockquote>
+<p><code>what</code>打头结构：<br />
+What(+名词)+助动词+主语？<br />
+<pre><code>What's your name?
+What's your job?
+
+What's his name?
+What make is your car?
+What color is your car?
+</code></pre></p>
+<p>陈述句变特殊疑问句：<br />
+1. 根据意思确定特殊疑问词<br />
+2. 特殊疑问词置于句首<br />
+3. 把助动词提至主语前</p>
+<h2 id="my-car-is-a-benz-what-make-is-your-car"><a name="user-content-my-car-is-a-benz-what-make-is-your-car" href="#my-car-is-a-benz-what-make-is-your-car" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a><pre><code>My car is a Benz.
+What make is your car?
+</code></pre></h2>
+<pre><code>That is a cat.
+What is that?
+</code></pre>
+
+<blockquote>
+<p>how引导的特殊疑问词</p>
+</blockquote>
+<p><code>how</code>引导的特殊疑问词经常用于询问健康状况，生活，工作等。<br />
+结构：<br />
+How + 助动词 + 主语?</p>
+<p><code>are</code> &ndash;&gt; <code>your</code>,<code>we</code>,<code>they</code>,复数名词(<code>books</code>, <code>men</code>, <code>people</code>)<br />
+<pre><code>How are your?
+How is your brother?
+
+How is your work?
+How is your wife?
+How is your live?
+</code></pre><br />
+<code>how</code>之后也可以跟形容词，用于询问具体的多高，多长等。<br />
+<pre><code>How long is your hair?
+</code></pre></p>
+<hr />
+<pre><code>Helen is fine.
+How is Helen?
+
+Helen's car is great.
+How is Helen's car?
+
+Helen is 5 feet tall.
+How tall is Helen?
+</code></pre>
+
+<blockquote>
+<p>whose引导的特殊疑问句</p>
+</blockquote>
+<p><code>whose</code>引导的特殊疑问词用来问某物是谁的.</p>
+<p>结构为：<br />
+Whose + 名词 + 助动词 + 主语?</p>
+<pre><code>Whose shirt is that?  Whose is that shirt?
+Whose book is that?   Whose is that book?
+Whose umbrella is this? Whose is this umbrella?
+</code></pre>
+
+<p>回答时往往用<strong>名词所有格</strong>或<strong>形容词性物主代词</strong>。<br />
+<pre><code>Whose is that shirt?
+It's Tim's shirt.
+It's his shirt.
+</code></pre></p>
+<hr />
+<pre><code>That is Tim's shirt.
+Whose shirt is that?
+That shirt is Tim's.
+Whose is that shirt?
+</code></pre>
+
+<blockquote>
+<p>who引导的特殊疑问句</p>
+</blockquote>
+<p>用来询问人的姓名或身份。<br />
+结构：<br />
+Who + 助动词 + 主语?</p>
+<h2 id="they-are-my-friends-who-are-they"><a name="user-content-they-are-my-friends-who-are-they" href="#they-are-my-friends-who-are-they" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a><pre><code>They are my friends.
+
+Who are they?
+</code></pre></h2>
+<h2 id="the-man-is-my-father-who-is-the-man"><a name="user-content-the-man-is-my-father-who-is-the-man" href="#the-man-is-my-father-who-is-the-man" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a><pre><code>The man is my father.
+Who is the man?
+</code></pre></h2>
+<p><pre><code>The girl is Kathy.
+Who is the girl?
+</code></pre><br />
+注：特殊疑问词对主语进行提问时不倒装（即不需要把助动词体质主语前）<br />
+<pre><code>The girl is my friend.
+Who is your friend?
+
+That is a car.
+What is that?
+
+My hair is brown.
+What color is your hair?
+
+Elaine is our teacher.
+Who is Elaine?
+
+That is Mike's car.
+Whose car is that?
+
+Helen is well.
+How is Helen?
+</code></pre></p>
+<h2 id="_6"><a name="user-content-_6" href="#_6" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>祈使句</h2>
+<p>祈使句省略主语you，所以以动词原形开头，往往表示请求，命令，建议，叮嘱等。</p>
+<h2 id="open-the-door-look-sit-down-please-give-me-your-hand-put-on-your-shirt-take-off-your-shoes-turn-on-the-tap-turn-off-the-stereo"><a name="user-content-open-the-door-look-sit-down-please-give-me-your-hand-put-on-your-shirt-take-off-your-shoes-turn-on-the-tap-turn-off-the-stereo" href="#open-the-door-look-sit-down-please-give-me-your-hand-put-on-your-shirt-take-off-your-shoes-turn-on-the-tap-turn-off-the-stereo" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a><pre><code>Open the door.
+Look!
+Sit down, please.
+Give me your hand.
+Put on your shirt.
+Take off your shoes.
+Turn on the tap.
+Turn off the stereo.
+</code></pre></h2>
+<pre><code>Stand up!  // 起立
+Shut up! // 闭嘴
+Hurry up! // 快点
+Hold on! // 等等
+Calm down! // 冷静
+Cheer up! // 高兴起来
+Slow down! // 慢下来
+Be careful! // 小心
+Be quiet! // 安静点
+Let's go! // 走吧
+</code></pre>
+
+<p>否定在句首加<code>don't</code>或<code>do not</code> (语气更强)<br />
+<pre><code>Don't do that. // 别那么做
+Do not do that. // 千万别那么做
+</code></pre><br />
+祈使句若有两个动词常用<code>and</code>连接。<br />
+<pre><code>Come and see my new dress. // 来看看我的新衣服
+Don't come and see my new dress. // 别来看我的新衣服。
+
+Go and wash your hands. // 去洗洗你的手
+</code></pre></p>
+<h2 id="_7"><a name="user-content-_7" href="#_7" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>感叹句</h2>
+<p>英文中的感叹句由<code>what</code>和<code>how</code>引导。</p>
+<ul>
+<li>what修饰名词</li>
+<li>how修饰形容词和副词</li>
+</ul>
+<p><strong>结构</strong></p>
+<blockquote>
+<p>What + a/an (+形容词) + 可数名词单数 (+主+谓)!</p>
+</blockquote>
+<pre><code>What a beautiful girl (she is)!
+What a handsome boy (he is)!
+What a day!
+What a person!
+</code></pre>
+
+<blockquote>
+<p>What + 形容词+ 可数名词复数/不可数名词 + (+主+谓)</p>
+</blockquote>
+<pre><code>What lovely children (they are)! // 多可爱的孩子们
+What terrible weather(it is)! // 糟糕的天气
+</code></pre>
+
+<blockquote>
+<p>How + 形容词/副词 + (主语+谓语)!</p>
+</blockquote>
+<pre><code>How handsome (the boy is)!
+How beautiful (the girl is)!
+</code></pre>
+
+<h2 id="_8"><a name="user-content-_8" href="#_8" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>人称代词</h2>
+<p>主语：动作的发出者<br />
+宾语：动作的承受者<br />
+形容词性物主代词：物的主人又相当于形容词使用.(定语)<br />
+名词性物主代词：物的主人又相当于名词使用.<br />
+反身代词: 反过来指自己的代词</p>
+<p>放在不同位置，体现形式不一样</p>
+<blockquote>
+<p>主格</p>
+</blockquote>
+<p>| --------   | :-----  | :----  |<br />
+| 单数        | I   | You   |  He She It  |<br />
+| 复数     | We |   You | They     |</p>
+<blockquote>
+<p>宾格</p>
+</blockquote>
+<p>| --------   | :-----  | :----  |<br />
+| 单数        | Me   | You   |  Him Her It  |<br />
+| 复数     | Us |   You | Them     |</p>
+<blockquote>
+<p>形容词性物主代词</p>
+</blockquote>
+<p>| --------   | :-----  | :----  |<br />
+| 单数        | My   | Your   |  His Her Its  |<br />
+| 复数     | Our |   Your | Their     |</p>
+<blockquote>
+<p>名词性物主代词</p>
+</blockquote>
+<p>| --------   | :-----  | :----  |<br />
+| 单数        | Mine   | Yours   |  His Hers its  |<br />
+| 复数     | Ours |   Yours | Theirs     |</p>
+<blockquote>
+<p>反身代词</p>
+</blockquote>
+<p>| --------   | :-----  | :----  |<br />
+| 单数        | Myself   | Yourself   |  Himself Hreself Itself  |<br />
+| 复数     | Ourselves |  Yourselves | Themselves    |</p>
+<hr />
+<p>主格：作主语<br />
+一般放在动词前面<br />
+<pre><code>I love you.
+You are so beautiful.
+He is my brother.
+She is a nice girl.
+</code></pre></p>
+<p>宾格：作宾语<br />
+一般放在动词后面<br />
+<pre><code>Thank you.
+Do you love me?
+Would you help us? // 你能帮帮我吗?
+I want to talk to him. // 我想和他谈谈。
+</code></pre></p>
+<p>形容词性物主代词：做定语。<br />
+从位置上看，一般当定语的放在名词前面。<br />
+<pre><code>This is my book. // 这是我的书。
+Thank you for your help. // 谢谢你帮助我。
+That man is her husband. // 这个男的是她的丈夫。
+His phone is lost. // 他的手机丢了。
+</code></pre></p>
+<p>名词性物主代词：形容词性物主代词 + 名词</p>
+<pre><code>Your shose are black. Mine are yellow.
+This is your book. It's yours.
+This is her handbag. It's hres.
+This isn't our car. It' gray. Ours is silver.
+</code></pre>
+
+<p>反身代词：当宾语和主语一致时，宾语用反身代词<br />
+<pre><code>I love myself.
+Don't hurt yourself. // 别伤害你自己。
+Enjoy yourself. // 好好玩。
+Be yourself！ // 做你自己
+</code></pre></p>
+<h2 id="_9"><a name="user-content-_9" href="#_9" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>冠词</h2>
+<blockquote>
+<p><code>a/an</code>是不定冠词，只修饰可数名词单数。</p>
+</blockquote>
+<p>翻译：一个</p>
+<ul>
+<li>用于第一次出现的人或物前。</li>
+<li>用<code>a</code>还是<code>an</code>取决于后面单词的第一个音标。  若是元音音标用<code>an</code>，辅音音标用<code>a</code>。</li>
+</ul>
+<pre><code>This is a new car.
+This is an apple.
+a coat
+a book
+an umbrella // 一把雨伞
+an English girl // 一个英国女孩
+</code></pre>
+
+<blockquote>
+<p><code>the</code> 是定冠词，可修饰任何名词。</p>
+</blockquote>
+<p>可数名词之前<br />
+翻译：这个，那个<br />
+不可数名词，复数之前<br />
+翻译：这些，那些</p>
+<ul>
+<li>用于特指的人或物前<br />
+    The watch is mine.</li>
+<li>用于重新提到的人或物前<br />
+    I hav a dog.<br />
+  The dog is very cute.</li>
+<li>用于世界上独一无二的事物前。<br />
+    The sun<br />
+    The earth<br />
+    The moon<br />
+    The Great Wall</li>
+</ul>
+<p>辅音前读 [ðə], 原因前读[ði:]</p>
+<h2 id="_10"><a name="user-content-_10" href="#_10" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>零冠词</h2>
+<p>即不用冠词的情况</p>
+<ul>
+<li>三餐前<br />
+    have breakfast / lunch / (supper/dinner[常用] 晚餐)</li>
+<li>不可数名词泛指（笼统）时。（空气，水）<br />
+    I like music.</li>
+<li>复数名词泛指时。<br />
+    Horses are beautiful animals.</li>
+<li><code>by + n.</code> 表示交通方式<br />
+    by bus / plane / ship</li>
+<li>名字前<br />
+    My name is xxx.</li>
+<li>称呼前<br />
+    I&rsquo;m not feeling well, doctor.</li>
+<li>语言前<br />
+    stydy English / Chinese</li>
+<li><code>bed</code>,<code>school</code>,<code>church</code>等强调其功能时。<br />
+    go to bed / school / church // go to church 去教堂<br />
+    send sb. to school / bed</li>
+</ul>
+<h2 id="_11"><a name="user-content-_11" href="#_11" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>介词</h2>
+<p>介词(牵线搭桥)：<code>in/on/at</code><br />
+介词后需跟<strong>名词</strong>或<strong>代词</strong>做宾语。<br />
+每个介词有自己的意思，但是对一些固定搭配需要单独记忆。</p>
+<blockquote>
+<p>on</p>
+</blockquote>
+<ul>
+<li>on 在&hellip;上</li>
+<li>on + 具体的某天</li>
+</ul>
+<pre><code>Where is my book?
+It's on the desk.
+</code></pre>
+
+<blockquote>
+<p>in</p>
+</blockquote>
+<ul>
+<li>in 在&hellip;里</li>
+<li>in + 年、月、四季</li>
+<li>in + 大地点（国家，城市）</li>
+<li>in the morning // 在早上</li>
+<li>in the afternoon</li>
+<li>in the evening // 在晚上</li>
+</ul>
+<pre><code>Where is Linda?
+She is in her room.
+</code></pre>
+
+<blockquote>
+<p>at</p>
+</blockquote>
+<ul>
+<li>at 在&hellip;</li>
+<li>at + 时间点</li>
+<li>at + 小地点（车站，家，机场）</li>
+<li>at + noon // 中午</li>
+<li>at + night // 夜晚</li>
+</ul>
+<h2 id="the-cat-is-at-the-door"><a name="user-content-the-cat-is-at-the-door" href="#the-cat-is-at-the-door" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a><pre><code>The cat is at the door.
+</code></pre></h2>
+<h2 id="we-were-at-the-aiport-on-monday-we-were-there-at-four-ocolok-they-were-in-australia-in-september-they-were-there-in-spring-on-november-25th-they-were-in-canada-1125-they-were-there-in-1990"><a name="user-content-we-were-at-the-aiport-on-monday-we-were-there-at-four-ocolok-they-were-in-australia-in-september-they-were-there-in-spring-on-november-25th-they-were-in-canada-1125-they-were-there-in-1990" href="#we-were-at-the-aiport-on-monday-we-were-there-at-four-ocolok-they-were-in-australia-in-september-they-were-there-in-spring-on-november-25th-they-were-in-canada-1125-they-were-there-in-1990" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a><pre><code>We were at the aiport on Monday. // 星期一我们在机场。
+We were there at four o'colok. // 我们四点钟在哪儿。
+They were in Australia in September. 
+They were there in spring.
+On November 25th, they were in Canada. // 11月25号，他们在加拿大
+They were there in 1990.
+</code></pre></h2>
+<pre><code>I usually get up at seven in the morning. // 我通常早上七点钟起床
+In the afternoon, I often go swimming // 在下午常常去游泳
+Sometimes I watch TV in the evening // 有时候在晚上看电视
+I often read a book at night. // 常常在夜晚读一本书。
+</code></pre>
+
+<h2 id="_12"><a name="user-content-_12" href="#_12" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>形容词和副词</h2>
+<blockquote>
+<p>形容词</p>
+</blockquote>
+<p>形容词一般置于<strong>名词前做定语</strong>或在<strong><code>be</code>之后做表语</strong>。</p>
+<p>常见的形容词如：<code>nice</code>,<code>good</code>,<code>beautiful</code>,<code>quick</code>等. <br />
+翻译：<code>xxx的</code></p>
+<pre><code>Jenny is a nice girl.
+We are good friends.
+You are beautiful.
+Be careful!
+Be quick!
+</code></pre>
+
+<blockquote>
+<p>副词</p>
+</blockquote>
+<p>副词通常修饰动词，形容词，副词<br />
+常见的副词：<code>very</code>,<code>so</code>,<code>enough</code>等。<br />
+很多副词由形容词末尾+<code>ly</code>构成。<br />
+如：<code>careful -&gt; carefully</code>,<code>simple -&gt; simply</code>,<code>slow -&gt; slowly</code>等。<br />
+翻译：<code>xxx地</code></p>
+<pre><code>Thank you very mach.
+You are so beautiful.
+The news is good enough to me. // 这个消息对我足够好
+Please drive carefully.
+He runs slowly.
+</code></pre>
+
+<h2 id="_13"><a name="user-content-_13" href="#_13" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>名词变复数</h2>
+<p>名词分为可数名词和不可数名词。可数名词有单数和复数两种形式，指一个以上的事物时用复数。</p>
+<p>名词变复数规则：<br />
+- 一般名词词尾加<code>s</code>构成复数。<br />
+    friend -&gt; friends<br />
+    case -&gt; cases<br />
+    handbag -&gt; handbags<br />
+    umbrella -&gt; umbrellas<br />
+- 以<code>s</code>,<code>x</code>,<code>ch</code>,<code>sh</code>和部分o结尾的词词尾加<code>es</code><br />
+    dress -&gt; dresses<br />
+    box -&gt; boxes<br />
+    watch -&gt; watches<br />
+    dish -&gt; dishes // 碟子<br />
+    tomato -&gt; tomatoes<br />
+    potato -&gt; patatoes<br />
+    photo -&gt; photos<br />
+- 以辅音字母<code>+y</code>结尾的单词，把<code>y</code>变<code>i</code>再加<code>es</code>。<br />
+    baby -&gt; babies<br />
+    city -&gt; cities<br />
+    boy -&gt; boys<br />
+    key -&gt; keys<br />
+- 以<code>f</code>,<code>fe</code>结尾的名词把<code>f</code>,<code>fe</code>变成<code>v</code>再加<code>es</code><br />
+    wife -&gt; wives<br />
+    wolf -&gt; wolves<br />
+- <code>man</code>, <code>woman</code>及以其结尾的名词把<code>man</code>变成<code>men</code>，<code>woman</code>变成<code>women</code><br />
+    policeman -&gt; policemen<br />
+    plicewoman -&gt; policewomen<br />
+- 不规则名词复数需单独记忆<br />
+    tooth -&gt; teeth<br />
+    child -&gt; children</p>
+<h2 id="_14"><a name="user-content-_14" href="#_14" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>基数词</h2>
+<pre><code>one two three four five
+six seven eight nine ten
+
+eleven twelve thirteen fourteen fifteen
+sixteen seventeen eighteen nineteen
+
+twenty thirty forty fifty
+sixty seventy eighty ninety
+
+hundred thousand million billion
+</code></pre>
+
+<h2 id="_15"><a name="user-content-_15" href="#_15" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>序数词</h2>
+<pre><code>the first (1st)
+the second (2nd)
+the third (3rd)
+the fourth (4th)
+the fifth (5th)
+the sixth (6th)
+the seventh (7th)
+the eighth (8th)
+the ninth (9th)
+the tenth (10th)
+the eleventh (11th)
+the twelfth (12th)
+the thirteenth (13th)
+the fourteenth (14th)
+the fiftennth (15th)
+the sixteenth (16th)
+the seventeenth (17th)
+
+the tentieth (20th)
+the thirtieth (30th)
+the fortieth (40th)
+the fiftieth (50th)
+the sixtieth (60th)
+the seventieth (70th)
+the eightieth (80th)
+the ninetieth (90th)
+
+the twenty first (21st)
+the twenty second (22nd)
+the twenty third (23rd)
+the twenty fourth (24th)
+the thirty first (31st)
+the fifty second (52nd)
+the eighty third (83rd)
+the ninety ninth (99th)
+
+the one hundredth (100th)
+</code></pre>
+
+<h2 id="_16"><a name="user-content-_16" href="#_16" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>时间表达法</h2>
+<ul>
+<li>整点：点钟 + （o&rsquo;clock）<br />
+    eight o&rsquo;clock<br />
+    ten o&rsquo;clock</li>
+<li>半点：half past + 点钟<br />
+    half past nine // 九点半</li>
+<li>分钟不过半: 分钟 + past + 点钟<br />
+    twenty past eight // 八点二十<br />
+    ten past five // 五点十分<br />
+    a quarter past four // 四点十五</li>
+<li>分钟过半： 剩余分钟数 + to + 下一点钟<br />
+    five to ten // 九点五十五<br />
+    twenty to eight // 七点四十<br />
+    a quarter to eleven // 十点四十五</li>
+</ul>
+<p>美式简单表达方法：<br />
+<strong>小时 + 分钟</strong><br />
+one twenty // 一点二十<br />
+one thirty // 一点三十<br />
+one fifty five // 一点五十五 </p>
+<h2 id="have"><a name="user-content-have" href="#have" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>have的用法</h2>
+<blockquote>
+<p><code>have</code>基本的意思为“拥有”，“具有”，第三人称单数<code>has</code></p>
+</blockquote>
+<pre><code>I have a sister and a brother.
+He has a car.
+</code></pre>
+
+<p>表示这层含义时，其疑问句和否定句有两种形式：</p>
+<ul>
+<li>把<code>have</code>作为一般动词，否定句和疑问句通过<code>do</code>,<code>does</code>来体现,只要不是第三人称单数就使用<code>do</code> （美）</li>
+</ul>
+<pre><code>Do you have a borther?
+I don't have a brother.
+
+He has a car.
+Does he have a car? // 加了does后面助动词要使用原型
+He dosen't have a car.
+
+Do you have any honey?
+I don't have a honey, but I have some Jam.
+
+Do the chiren have a butter?
+They don't have nay butter.but they have some eggs.
+</code></pre>
+
+<ul>
+<li>把<code>have</code>作为助动词，即提至主语前变为疑问句，之后加<code>not</code>变为否定句。(英)</li>
+</ul>
+<pre><code>Have you a brother?
+I haven't a brother.
+
+Has he a car?
+He hasn't a car.
+</code></pre>
+
+<blockquote>
+<p>have表示“患病”</p>
+</blockquote>
+<h2 id="jimmy-has-a-bad-cold-does-he-have-a-bad-cold-has-he-a-bad-cold-he-doesnt-have-a-bad-cold-he-hasnt-a-bad-cold"><a name="user-content-jimmy-has-a-bad-cold-does-he-have-a-bad-cold-has-he-a-bad-cold-he-doesnt-have-a-bad-cold-he-hasnt-a-bad-cold" href="#jimmy-has-a-bad-cold-does-he-have-a-bad-cold-has-he-a-bad-cold-he-doesnt-have-a-bad-cold-he-hasnt-a-bad-cold" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a><pre><code>Jimmy has a bad cold.
+
+Does he have a bad cold?
+Has he a bad cold?
+
+He doesn't have a bad cold.
+He hasn't a bad cold.
+</code></pre></h2>
+<pre><code>What's the matter with Elizabeth?
+Does she have an eareache? // 她耳朵痛么?
+She donesn't have an eareache. // 她没有耳朵痛。
+She has a headache.
+</code></pre>
+
+<blockquote>
+<p>have可表示“吃，喝，玩，做”等常见的动作</p>
+</blockquote>
+<p>这时have为实义动词，否定句和疑问句需要借助于助动词do的某种形式。</p>
+<p>固定搭配：<br />
+<pre><code>have breakfast
+have lunch
+have dinner
+have a party
+have a good time
+have a look
+have a bath
+have a walk
+</code></pre></p>
+<p>例句：<br />
+<pre><code>Do you have breakfast every day?
+Did you have breakfast today?
+I didn't have breakfast.
+I am having breakfast.
+
+What are they going to do?
+They are going to have breakfast.
+
+What are they doing?
+They are haveing blunch.
+
+What did they do?
+They had dinner.
+
+What is he doing?
+He is having a bath.
+</code></pre></p>
+<p>注：<code>have</code>表示“拥有”和“患病”时在一般现在时态里其后可加<code>got</code>,<br />
+<code>got</code>无实际意义。这时否定句和疑问句在<code>have</code>上发生变化。</p>
+<h2 id="ive-some-time-ive-got-some-time-have-you-got-any-time-i-havent-got-any-time"><a name="user-content-ive-some-time-ive-got-some-time-have-you-got-any-time-i-havent-got-any-time" href="#ive-some-time-ive-got-some-time-have-you-got-any-time-i-havent-got-any-time" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a><pre><code>I've some time.
+I've got some time.
+
+Have you got any time?
+I haven't got any time.
+</code></pre></h2>
+<pre><code>Have they got any bread? // 他们有面包么？
+They haven't got nay bread.
+</code></pre>
+
+<h2 id="_17"><a name="user-content-_17" href="#_17" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>语序和五种基本句式</h2>
+<blockquote>
+<p>五种基本句式</p>
+</blockquote>
+<ul>
+<li>S+V (主+谓)</li>
+<li>S+V+P (主+系动词+表)</li>
+<li>S+V+O (主+谓+宾)</li>
+<li>S+V+o+O (主+谓+间宾+直宾)</li>
+<li>S+V+O+C (主+谓+宾+宾补)</li>
+</ul>
+<h2 id="_18"><a name="user-content-_18" href="#_18" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>时态</h2>
+<p>英语中16种时态</p>
+<p>即时间和形态（谓语动词的形态），不同时间所体现出来的形态不一样。英文中的时态的不同靠动词来体现。</p>
+<p>任何时态需要掌握两条：结构和用法（即使用场合）</p>
+<blockquote>
+<p>现在进行时</p>
+</blockquote>
+<p>结构：am/is/are + doing(动词现在分词)<br />
+am/is/are 在现在进行时中为助动词(辅助动词做谓语)，没有实际意义，帮助动词doing一起做谓语。</p>
+<p><pre><code>I am doing...
+He/She/It is doing... // (He/She/It/任何一个人名)
+We/You/They are doing... // (除了I/He/She/It/任何一个人名以外的任何名称都要使用are)
+</code></pre><br />
+通过<code>ing</code>体现<strong>进行</strong>，通过<code>am，is，are</code>体现<strong>现在</strong></p>
+<p>表示“是”时也成为系动词。</p>
+<p>主谓一致的原则不变</p>
+<p>动词现在分词构成：</p>
+<ul>
+<li>一般动词在词尾加<code>ing</code>。<br />
+    read -&gt; reading<br />
+    cook -&gt; cooking<br />
+    climb -&gt; climbing</li>
+<li>以不发音<code>e</code>结尾的动词，去<code>e</code>再加<code>ing</code><br />
+    make -&gt; making<br />
+    type -&gt; tyeing<br />
+    come -&gt; coming</li>
+<li>重读闭音节结尾的动词，双写最后一个辅音字母再加<code>ing</code><br />
+    put -&gt; putting<br />
+    run -&gt; running<br />
+    begin -&gt; beginning</li>
+</ul>
+<p>音节: 一个单词内部的元音。<br />
+重读闭音节：需要看一个单词最后结尾的三个音标。如果是辅音-元音-辅音的顺序，还要第一个开始辅音右上角是重读。例如：<code>put[put]</code>,<code>begin[bi'gin]</code></p>
+<p>用法：<br />
+- 表示现在正在做的事<br />
+    Mon is cooking in the kitchen.<br />
+    Susan is reading a book.<br />
+    I am watching TV.<br />
+    They are cleaning the office.<br />
+    My dog is running after a cat.<br />
+- 表示现阶段正在做的事<br />
+    I am studying English.</p>
+<p>否定句：在<code>am/is/are</code>    之后加<code>not</code>,缩写<code>n't</code>。例如：<code>He isn't sleeping.</code><br />
+疑问句：把<code>am/is/are</code>提至主语前面，句末加问号。例如：<code>Are you reading a book?</code>,<code>What are you doing</code></p>
+<blockquote>
+<p>一般现在时态</p>
+</blockquote>
+<p>时：时间，使用场合，用法<br />
+态：谓语动词的结构<br />
+表示状态：be动词<br />
+表示动作：其它动词</p>
+<p>用法：<br />
+- 表示经常性的习惯性的动作或存在的状态<br />
+    表示状态：be动词<br />
+    表示动作：其它动词<br />
+    I often get up early. // 我常常起的很早。<br />
+    He is busy every day. // 他每天都很忙。<br />
+- 表示主语的特征，性格，能力，爱好等。<br />
+    Susan is tall.<br />
+    I like swimming.<br />
+    John works hard.- 表示客观真理。<br />
+    There are sevent days in a week.<br />
+    The earth moves around the sun.</p>
+<p>表达过去，现在，将来都<strong>一样</strong>的状态就使用一般现在时态</p>
+<p>结构：<br />
+- 主语 + 系动词be（am/is/are）<br />
+    注意：be之后不再有其它动词，常跟形容词，名词或介词短语作表语。<br />
+    She is beautiful.<br />
+    This is my dog.<br />
+    Mom is in the kitchen.<br />
+    否定句：在<code>be</code>后加<code>not</code><br />
+    疑问句：把<code>be</code>提至主语前<br />
+    This isn&rsquo;t my dog.<br />
+    Is this your dog?<br />
+- 主语 + 其它动词<br />
+    主语 + 动词原形 // 适用于主语为第三人称单数以外的其它人称<br />
+    I love you.<br />
+    I like coffee.<br />
+    We get up at 7 in the morning. // (时间在前，地点在后)<br />
+    John and Tom like tea.<br />
+    You look well.<br />
+    否定句：主语 + <code>don't</code> + 动词原形<br />
+    疑问句：在主语前加<code>do</code>，句末用问号。<br />
+    I don&rsquo;t love you.<br />
+    I don&rsquo;t like coffee.<br />
+        Do you love me?<br />
+    Do you like coffee?<br />
+    What do you like?<br />
+    一般疑问句的回答常用<code>do</code>的简略形式。<br />
+    Yes, I do.<br />
+    No, I don&rsquo;t.<br />
+    注意：<code>be动词</code>与<code>其它动词不能</code>出现在同一个句子中！<br />
+- 主语 + 动词第三人称单数<br />
+    适用于：主语是三人称单数时（he/she/it）<br />
+    否定句：主语 + <code>doesn't</code> + 动词原形<br />
+    疑问句：在主语前加<code>does</code>，句末用问号。<br />
+    Does Linda like music?<br />
+    Linda doesn&rsquo;t like music.<br />
+    What does Linda like?<br />
+    回答：<br />
+    Yes,he does.<br />
+    Not, he doesn&rsquo;t.</p>
+<p>确定：该用be动词，还是其它动词(然后决定该用原形还是三单)。 </p>
+<p>动词第三人称单数:<br />
+- 一般在词尾加<code>s</code><br />
+    like -&gt; likes<br />
+    run -&gt; runs<br />
+    live -&gt; lives<br />
+    work -&gt; wroks<br />
+- 辅音字母<code>+y</code>结尾的动词,把<code>y</code>变为<code>i</code>再加<code>es</code><br />
+    cry -&gt; cries<br />
+    fly -&gt; flies<br />
+    study -&gt; studies<br />
+- 以<code>s</code>,<code>x</code>,<code>ch</code>,<code>sh</code>,<code>o</code>结尾的动词，词尾加<code>es</code><br />
+    teach -&gt; teaches<br />
+    wash -&gt; washes<br />
+    fix -&gt; fixes</p>
+<p>注意：名词两个以上时需加<code>s</code> ,<code>es</code>。动词在一般现在时态里主语为第三人称单数时需要<code>s</code>,<code>es</code></p>
+<p>先确定动词，然后确定主语，然后其它成分。<br />
+中文和英文不是一个字一个字对应翻译，而是意译，意思到了就可以。</p>
+<pre><code>Richard has a son.
+
+The boy is very cute.
+
+He has very money.
+He has a lot of money.
+
+He buys a phone every year. // 时间状语放在最后，地点状语放在最后。如果同时出现，时间在后，地点在前。
+</code></pre>
+
+<blockquote>
+<p>现在进行时态与一般现在时态</p>
+</blockquote>
+<p>现在进行时态表示此刻正在进行的动作，常与<code>now</code>,<code>at the moment</code>,<code>today</code>等连用。<br />
+<pre><code>What is she doing at the moment?
+She is drinking coffee at the moment.
+What are they doing today?
+Thery are swimming in the river today.
+What are you doing now？
+I'm reading a book now.
+
+What are you doing today?
+We are studying English today.
+</code></pre></p>
+<p>一般现在时态表示目前一个时间段内过去，现在，将来都一样的动作或状态。常与时间频率副词<code>usually</code>,<code>always</code>,<code>often</code>,<code>sometimes</code>等连用。</p>
+<pre><code>What does she usually do in the morning?  // 时间频率副词放在谓语动词之前。
+She usually drinks tea in the morning.
+What do they usually do in the afternoon?
+They ususlly play in the garden in the afternoon.
+</code></pre>
+
+<blockquote>
+<p>一般过去时</p>
+</blockquote>
+<p>用法：<br />
+- 表示过去<strong>某个特定时间点</strong>的状态或动作<br />
+    I bought a dictionary yesterday.<br />
+    He was a doctor a year ago.<br />
+- 表示过去<strong>某段时间内</strong>的习惯，反复发生的动作。<br />
+    When he was a child, he often wet the bed.<br />
+- 当谈到已故的人时候。<br />
+    Lu Xun was a great writer.</p>
+<p>结构：</p>
+<ul>
+<li>主语 + be过去式（was,were）<br />
+    am -&gt; was<br />
+    is -&gt; was<br />
+    are -&gt; were<br />
+    即：<br />
+    I/He/She/It was&hellip;<br />
+    We/You/They were&hellip;<br />
+    I was at the dentist&rsquo;s yesterday.<br />
+    It was cold yesterday.<br />
+    We were home yesterday.<br />
+    I was tired last night.<br />
+    John was busy last week.<br />
+    否定句：在be后边加not<br />
+    疑问句：把be往主语前面提，句末加问号<br />
+    回答：<br />
+    Yes, I was.<br />
+    No, I wasn&rsquo;t.<br />
+    Was Jimmy ill last week?<br />
+    Where were you just now?<br />
+    Were you at the dentist&rsquo;s?</li>
+<li>主语 + 其它动词（动词过去式）<br />
+    适用于：任何人称。<br />
+    He jumped off the wall.<br />
+    He worked very late last night.<br />
+    I arrived home late.<br />
+    He said nothing.<br />
+    We finished the work at last.<br />
+    比较：<br />
+    I love you.<br />
+    I loved you.<br />
+    否定句：动词前加didn&rsquo;t,把动词改回原形<br />
+    疑问句：把did往主语前提，动词改回原形，句末加问号。<br />
+    I didn&rsquo;t work yesterday.<br />
+    He didn&rsquo;t come.<br />
+    We didn&rsquo;t finish the work.<br />
+    Did he phone you yesterday?<br />
+    What did you say?<br />
+    What did you do yesterday?</li>
+</ul>
+<p>动词过去式：<br />
+不规则动词的过去式需要单独记忆。<br />
+<pre><code>say -&gt; said
+do -&gt; did
+go -&gt;  went
+come -&gt; came
+</code></pre><br />
+规则动词过去式构成：<br />
+- 一般动词词尾加<code>ed</code><br />
+    call -&gt; called<br />
+    answer -&gt; answered<br />
+    finish -&gt; finished<br />
+- 以e结尾的动词只加<code>d</code><br />
+    phone -&gt; phoned<br />
+    believe -&gt; believed<br />
+    agree -&gt; agreed<br />
+- 以辅音字母 + y     结尾动词，y变为i再加ed<br />
+    cry -&gt; cried<br />
+    try -&gt; tried<br />
+    study -&gt; studied<br />
+    enjoy -&gt; enjoyed<br />
+    play -&gt; played<br />
+- 以重读闭音节结尾的动词，双写最后一个辅音字母再加<code>ed</code><br />
+    stop -&gt; stopped<br />
+    beg -&gt; begged<br />
+    fit -&gt; fitted</p>
+<p>动词加<code>d</code>/<code>ed</code>后读音：<br />
+- 清辅音(不会有声带的发音)后读[t]<br />
+    knocked/helped/asked<br />
+- 浊辅音和元音后读[d]<br />
+    cleaned/tried/begged<br />
+- [t]   [d]后读[id]<br />
+    wanted/minded</p>
+<blockquote>
+<p>一般现在时态与一般过去时态</p>
+</blockquote>
+<p>一般现在时态常与<code>every day</code>,<code>every week</code>,<code>sometimes</code>,<code>often</code>,<code>alway</code>等时间状语连用<br />
+一般过去时态常与<code>yesterday</code>,<code>last week</code>,<code>three days ago</code>等时间状语连用(只要出现了<code>ago</code>就需要使用一般过去时态)</p>
+<pre><code>She meets her firends every day.
+She met her firends yesterday.
+
+They drink some milk every day.
+They drank some milk yesterday.
+
+He swims in the river every day.
+He swam in the river yesterday.
+
+She takes him to school every morning.
+She took him to school yesteryday morning.
+</code></pre>
+
+<blockquote>
+<p>现在完成时</p>
+</blockquote>
+<p>结构：<br />
+<code>has/have</code> + 动词过去分词（p.p.）</p>
+<p>完成靠动词体现，has/have现在体现<br />
+<code>has/have</code>为助动词（帮助动词一起做谓语），这边没有任何意义。<br />
+否定句和疑问句在<code>has/have</code>上发生变化。</p>
+<p>用法：<br />
+- 动作在过去已经发生，但对现在的影响依然存在，而且具体发生时间不明，一旦有具体发生的时间，就必须用一般过去时。</p></article></body></html>
